@@ -56,7 +56,7 @@ NOTE:
 
 ### Pre-requisites
 
-Download the official NiFi 1.6 build to the project directory, to a file `nifi-1.6.0-bin.zip`.
+Download the official NiFi 1.6 build to the project directory, to the file `nifi-1.6.0-bin.zip`.
 
 ### using Maven
 
@@ -75,7 +75,7 @@ The NiFi flow `src/test/resources/flow.xml` was extracted from NiFi. To install 
 NiFi instance to view it on the GUI or to modify it, follow the these instructions:
 
 1. Open a shell, and switch to `src/test/resources/` directory
-2. Create a GZip file called `flow.xml.gz` from `flow.xml` by issuing 'gzip < flow.xml > flow.xml.gz' 
+2. Create a GZip file called `flow.xml.gz` from `flow.xml` by issuing `gzip < flow.xml > flow.xml.gz` 
     NOTE: step 1. is important: the GZip file must NOT contain relative paths, 
     it should contain a a single file called `flow.xml`, WITHOUT any directories
 3. Unzip a standard NiFi 1.6.0 distribution zip to a location of your choice
