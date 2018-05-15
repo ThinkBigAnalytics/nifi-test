@@ -23,6 +23,6 @@ public class Constants {
 
     private static final String USER_HOME = System.getProperty("user.home");
     static final File OUTPUT_DIR = new File(USER_HOME + "/NiFiTest/NiFiReadTest");
-    static final File NIFI_ZIP_FILE = new File("../nifi-1.6.0-SNAPSHOT-bin.zip");
+    static final File NIFI_ZIP_FILE = new File("../nifi-1.6.0-bin.zip");
     static File FLOW_XML_FILE = new File(NiFiMockFlowTest.class.getResource("/flow.xml").getFile());
 }

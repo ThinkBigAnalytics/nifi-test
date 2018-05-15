@@ -18,8 +18,8 @@ A simple behaviour, which still could only be tested manually, by installing the
 to NiFi and, checking the results manually.
 
 The integration test in `src/test/java/com/thinkbiganalytics/nifi/test/NiFiFlowTest.java` 
-expects a NiFi 1.6-SNAPSHOT binary ZIP installer package to be placed to 
-`nifi-1.6.0-SNAPSHOT-bin.zip` inside the project directory.
+expects a NiFi 1.6 binary ZIP installer package to be placed to 
+`nifi-1.6.0-bin.zip` inside the project directory.
 
 ```
   _____ __  __ _____   ____  _____ _______       _   _ _______  
@@ -31,7 +31,8 @@ expects a NiFi 1.6-SNAPSHOT binary ZIP installer package to be placed to
 
 ```
 when running, the work directory of `NiFiFlowTest` has to be set to `nifi_test_nifi_home`,
-otherwise, it does not work.
+otherwise, it does not work. The Maven build does this by default, but you will have to adjust
+the settings manually if you run the test cases in an IDE.
 
 ## Overview
 
@@ -46,10 +47,16 @@ Once the instance is online,`NiFiFlowTest#testFlowCreatesFilesInCorrectLocation(
  but the _concept itself_ seems to work)
 
 NOTE:
- * The code was written and tested against the official NiFi 1.6.0-SNAPSHOT build
- * The binary ZIP of NiFi 1.6 has to be placed to `nifi-1.6.0-SNAPSHOT-bin.zip` inside 
+ * The code was written and tested against the official NiFi 1.6.0 build
+ * The binary ZIP of NiFi 1.6 has to be placed to `nifi-1.6.0-bin.zip` inside 
     the project directory for it to work
     
+    
+## Overview
+
+To run the test case from Maven, simply go to the project directory and issue a the following command:
+`mvn clean test`    
+
     
 ## Installing the flow to a NiFi instance
 
@@ -60,7 +67,7 @@ NiFi instance to view it on the GUI or to modify it, follow the these instructio
 2. Create a GZip file called `flow.xml.gz` from `flow.xml` by issuing 'gzip < flow.xml > flow.xml.gz' 
     NOTE: step 1. is important: the GZip file must NOT contain relative paths, 
     it should contain a a single file called `flow.xml`, WITHOUT any directories
-3. Unzip a standard NiFi 1.6.0-SNAPSHOT distribution zip to a location of your choice
+3. Unzip a standard NiFi 1.6.0 distribution zip to a location of your choice
 4. Put the `flow.xml.gz` file to the `conf` directory of the clean NiFi installation created in the previous step.  
 5. Start the NiFi instance using the standard scripts. 
     

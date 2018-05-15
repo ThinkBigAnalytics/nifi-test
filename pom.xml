@@ -39,7 +39,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <org.slf4j.version>1.7.25</org.slf4j.version>
       <jetty.version>9.4.3.v20170317</jetty.version>
-      <nifi.version>1.6.0-SNAPSHOT</nifi.version>
+      <nifi.version>1.6.0</nifi.version>
   </properties>
 
   <dependencies>
