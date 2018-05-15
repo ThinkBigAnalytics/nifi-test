@@ -52,11 +52,22 @@ NOTE:
     the project directory for it to work
     
     
-## Overview
+## Running the test cases
+
+### Pre-requisites
+
+Download the official NiFi 1.6 build to the project directory, to a file `nifi-1.6.0-bin.zip`.
+
+### using Maven
 
 To run the test case from Maven, simply go to the project directory and issue a the following command:
-`mvn clean test`    
+`mvn clean test` 
 
+### from any IDE
+
+Create a run configuration for the test cases `NiFiFlowTest` or `NiFiMockFlowTest` and
+make sure the test case is started within the directory `nifi_test_nifi_home`. You can
+both simply _run_ or _debug_.
     
 ## Installing the flow to a NiFi instance
 
