@@ -1,0 +1,8 @@
+target/
+*.iml
+.idea/
+nifi-*-bin.zip
+nifi_test_nifi_home/
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+dependency-reduced-pom.xml
