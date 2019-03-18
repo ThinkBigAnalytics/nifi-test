@@ -7,6 +7,6 @@ asserts regarding the behaviour of the flow just like a Java unit test.
 
 This repository is no longer used: the code base has been pushed trough
 the appropriate Teradata open sourcing process (OSAT) and it has been 
-committed back to Apache NiFi as [Apache NiFi testharness]
-(https://github.com/apache/nifi/tree/master/nifi-testharness)
+committed back to Apache NiFi as an individual NiFi component,
+[Apache NiFi testharness](https://github.com/apache/nifi/tree/master/nifi-testharness)
 in the [Pull Request #3165](https://github.com/apache/nifi/pull/3165)
